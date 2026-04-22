@@ -1,4 +1,4 @@
-# 🎓 Student Performance Predictor (ML + Web Application)
+# 🎓 Student Performance Predictor
 
 ## 📌 Overview
 
