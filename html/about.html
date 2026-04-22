@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Student Performance Predictor</title>
+    <link rel="stylesheet" href="../css/style_home.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">Student Predictor</span>
+            </div>
+            <div class="mobile-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="predict.html" class="btn-nav-predict">Start Prediction</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <div class="container">
+            <h1>About This System</h1>
+            <p>ML-Based System for Predicting College Student Academic Performance</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>Project Overview</h2>
+            <div class="about-card">
+                <p>A web-based system demonstrating machine learning principles for predicting student
+                    academic performance using a Flask backend and a Random Forest regression model.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="about-card">
+                <ul class="features-list-simple">
+                    <li>ML-powered prediction using Random Forest Regressor</li>
+                    <li>Backend API built with Flask</li>
+                    <li>Real-time results with visual analytics</li>
+                    <li>12 input features across academic and behavioral domains</li>
+                    <li>Fully responsive design</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="about-card">
+                <ol class="how-list">
+                    <li>Enter your student details across two sections</li>
+                    <li>Review and submit for ML analysis</li>
+                    <li>Receive predicted end-semester marks and grade</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>Input Features</h2>
+            <div class="features-breakdown">
+                <div class="feature-category">
+                    <h3>📚 Academic (8)</h3>
+                    <div class="about-card">
+                        <ul>
+                            <li><strong>Attendance:</strong> Percentage of classes attended (0–100%)</li>
+                            <li><strong>Study Hours:</strong> Daily self-study hours (0–12)</li>
+                            <li><strong>Previous CGPA:</strong> Last semester CGPA (0–10)</li>
+                            <li><strong>Internal Marks:</strong> Internal assessment score (0–30)</li>
+                            <li><strong>Mid-Semester Marks:</strong> Midsem exam score (0–20)</li>
+                            <li><strong>Backlogs:</strong> Number of failed subjects (0–5+)</li>
+                            <li><strong>Assignment Completion:</strong> Submission rate (0–100%)</li>
+                            <li><strong>Class Participation:</strong> Engagement level (1–5)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-category">
+                    <h3>👤 Demographic & Behavioral (4)</h3>
+                    <div class="about-card">
+                        <ul>
+                            <li><strong>Age:</strong> Student age (17–30)</li>
+                            <li><strong>Gender:</strong> Male / Female / Other</li>
+                            <li><strong>Extra-Curricular:</strong> Participation in non-academic activities</li>
+                            <li><strong>Late-Night Entry:</strong> Hostel entry frequency (1–5)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>Output & Grading</h2>
+            <div class="about-card">
+                <h3>ML Output</h3>
+                <p><strong>Predicted End-Semester Marks:</strong> 0–50</p>
+
+                <h3 style="margin-top: 1.5rem;">Total Marks</h3>
+                <p><strong>Total = Mid-Semester (20) + Internal (30) + End-Semester (50) = 100</strong></p>
+
+                <h3 style="margin-top: 1.5rem;">Grade Scale</h3>
+                <div class="grade-table">
+                    <div class="grade-row"><span class="grade-badge-small grade-O">O</span> 90–100 &nbsp;Outstanding</div>
+                    <div class="grade-row"><span class="grade-badge-small grade-E">E</span> 80–89 &nbsp;Excellent</div>
+                    <div class="grade-row"><span class="grade-badge-small grade-A">A</span> 70–79 &nbsp;Very Good</div>
+                    <div class="grade-row"><span class="grade-badge-small grade-B">B</span> 60–69 &nbsp;Good</div>
+                    <div class="grade-row"><span class="grade-badge-small grade-C">C</span> 50–59 &nbsp;Average</div>
+                    <div class="grade-row"><span class="grade-badge-small grade-D">D</span> 40–49 &nbsp;Below Average</div>
+                    <div class="grade-row"><span class="grade-badge-small grade-F">F</span> &lt;40 &nbsp;Fail</div>
+                </div>
+                <p style="margin-top: 1rem;"><em>Grade is computed using fixed academic rules, not predicted by ML.</em></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>Built With</h2>
+            <div class="tech-badges">
+                <span class="tech-badge-new">HTML5</span>
+                <span class="tech-badge-new">CSS3</span>
+                <span class="tech-badge-new">JavaScript</span>
+                <span class="tech-badge-new">Python</span>
+                <span class="tech-badge-new">Flask</span>
+                <span class="tech-badge-new">scikit-learn</span>
+                <span class="tech-badge-new">Chart.js</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Student Performance Predictor &mdash; ML Mini Project</p>
+        </div>
+    </footer>
+
+    <script src="../js/script_home.js"></script>
+</body>
+</html>
